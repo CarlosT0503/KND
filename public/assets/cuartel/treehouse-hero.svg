@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d2f25"/>
+      <stop offset="45%" stop-color="#0a1c14"/>
+      <stop offset="100%" stop-color="#04100a"/>
+    </linearGradient>
+    <radialGradient id="moonglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#eef3d8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#eef3d8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="canopy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#204a2c"/>
+      <stop offset="100%" stop-color="#0e2216"/>
+    </linearGradient>
+    <linearGradient id="canopyRim" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0%" stop-color="#3d7a45" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3d7a45" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#241809"/>
+      <stop offset="45%" stop-color="#4a3320"/>
+      <stop offset="100%" stop-color="#20150a"/>
+    </linearGradient>
+    <linearGradient id="tin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a8a86"/>
+      <stop offset="100%" stop-color="#3c4744"/>
+    </linearGradient>
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f2d675" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#f2d675" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f2a23a" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#f2a23a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#sky)"/>
+
+  <!-- estrellas -->
+  <g fill="#d9e8d3" opacity="0.75">
+    <circle cx="120" cy="90" r="1.6"/><circle cx="220" cy="150" r="1.2"/>
+    <circle cx="340" cy="70" r="1.8"/><circle cx="80" cy="220" r="1.3"/>
+    <circle cx="980" cy="60" r="1.4"/><circle cx="1050" cy="180" r="1.6"/>
+    <circle cx="1240" cy="90" r="1.3"/><circle cx="1320" cy="220" r="1.7"/>
+    <circle cx="640" cy="50" r="1.2"/><circle cx="450" cy="120" r="1.5"/>
+    <circle cx="30" cy="330" r="1.1"/><circle cx="1380" cy="330" r="1.4"/>
+    <circle cx="180" cy="380" r="1.2"/><circle cx="1140" cy="330" r="1.1"/>
+    <circle cx="900" cy="110" r="1.3"/><circle cx="380" cy="180" r="1.1"/>
+  </g>
+  <!-- estrella fugaz -->
+  <path d="M240 130 L300 165" stroke="#eef3d8" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- luna con crateres y nubes finas -->
+  <circle cx="1180" cy="150" r="150" fill="url(#moonglow)"/>
+  <circle cx="1180" cy="150" r="56" fill="#eef3d8"/>
+  <circle cx="1164" cy="133" r="8" fill="#d9e0bd" opacity="0.6"/>
+  <circle cx="1197" cy="163" r="5" fill="#d9e0bd" opacity="0.5"/>
+  <circle cx="1172" cy="168" r="4" fill="#d9e0bd" opacity="0.4"/>
+  <g fill="#0a1c14" opacity="0.45">
+    <ellipse cx="1120" cy="140" rx="120" ry="14"/>
+    <ellipse cx="1230" cy="185" rx="90" ry="11"/>
+  </g>
+
+  <!-- colinas de fondo -->
+  <path d="M0 650 Q 250 580 500 640 T 1000 630 T 1400 660 V900 H0 Z" fill="#0d1d15" opacity="0.9"/>
+  <path d="M0 700 Q 300 650 600 700 T 1400 700 V900 H0 Z" fill="#081209"/>
+
+  <!-- arbol lejano, silueta para dar profundidad -->
+  <g opacity="0.55" fill="#0a1a10">
+    <ellipse cx="180" cy="560" rx="110" ry="75"/>
+    <rect x="168" y="600" width="22" height="120"/>
+  </g>
+  <g opacity="0.4" fill="#0a1a10">
+    <ellipse cx="1270" cy="600" rx="90" ry="60"/>
+    <rect x="1258" y="630" width="18" height="90"/>
+  </g>
+
+  <!-- luciernagas -->
+  <g fill="#c9ff8f" opacity="0.7">
+    <circle cx="360" cy="470" r="2.4"/><circle cx="900" cy="520" r="2"/>
+    <circle cx="410" cy="560" r="1.8"/><circle cx="950" cy="440" r="2.2"/>
+    <circle cx="320" cy="600" r="1.6"/><circle cx="1000" cy="600" r="1.8"/>
+  </g>
+
+  <!-- copa del arbol: capas con textura -->
+  <g fill="url(#canopy)">
+    <ellipse cx="620" cy="320" rx="280" ry="160"/>
+    <ellipse cx="440" cy="380" rx="180" ry="125"/>
+    <ellipse cx="820" cy="365" rx="200" ry="135"/>
+    <ellipse cx="660" cy="235" rx="190" ry="115"/>
+  </g>
+  <g fill="#0e2517" opacity="0.6">
+    <ellipse cx="560" cy="300" rx="150" ry="90"/>
+    <ellipse cx="770" cy="320" rx="145" ry="88"/>
+  </g>
+  <!-- borde iluminado por la luna -->
+  <path d="M760 200 Q 900 240 940 340 Q 970 420 900 480" stroke="url(#canopyRim)" stroke-width="26" fill="none" opacity="0.6"/>
+  <!-- racimos de hojas, textura -->
+  <g fill="#2c5c37" opacity="0.55">
+    <circle cx="470" cy="330" r="7"/><circle cx="500" cy="310" r="5"/>
+    <circle cx="760" cy="290" r="7"/><circle cx="800" cy="310" r="5"/>
+    <circle cx="880" cy="400" r="6"/><circle cx="620" cy="230" r="6"/>
+    <circle cx="700" cy="380" r="5"/><circle cx="550" cy="420" r="5"/>
+  </g>
+
+  <!-- tronco con raices -->
+  <path d="M560 900 Q 585 800 600 700 L 640 430 700 430 740 700 Q 758 800 785 900 Z" fill="url(#trunk)"/>
+  <polygon points="620,900 645,430 655,430 640,900" fill="#20150a" opacity="0.6"/>
+  <g stroke="#1a1006" stroke-width="3" opacity="0.5">
+    <path d="M615 460 Q 610 600 605 750" fill="none"/>
+    <path d="M700 470 Q 706 610 712 760" fill="none"/>
+  </g>
+  <!-- raices expuestas -->
+  <g fill="#241809">
+    <path d="M600 860 Q 540 880 480 900 L 520 900 Q 570 885 610 900 Z"/>
+    <path d="M740 860 Q 800 880 860 900 L 810 900 Q 770 885 730 900 Z"/>
+  </g>
+
+  <!-- rama de soporte -->
+  <path d="M600 470 Q 500 500 460 570" stroke="#3a2a1a" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <path d="M760 470 Q 870 495 920 545" stroke="#3a2a1a" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <path d="M690 440 Q 720 380 700 320" stroke="#3a2a1a" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+  <!-- columpio de llanta, colgado de la rama -->
+  <line x1="470" y1="575" x2="440" y2="700" stroke="#8a7852" stroke-width="4"/>
+  <line x1="500" y1="575" x2="470" y2="700" stroke="#8a7852" stroke-width="4"/>
+  <ellipse cx="452" cy="738" rx="44" ry="32" fill="none" stroke="#1c1c1c" stroke-width="15"/>
+
+  <!-- casa del arbol: techo de lamina -->
+  <polygon points="555,412 670,325 785,412" fill="#241809"/>
+  <polygon points="568,406 670,338 772,406" fill="url(#tin)"/>
+  <g stroke="#2a3532" stroke-width="2" opacity="0.6">
+    <line x1="590" y1="398" x2="655" y2="350"/>
+    <line x1="625" y1="404" x2="670" y2="340"/>
+    <line x1="670" y1="340" x2="715" y2="402"/>
+    <line x1="700" y1="352" x2="750" y2="404"/>
+  </g>
+  <rect x="640" y="335" width="14" height="8" fill="#5c6f6b"/>
+  <!-- chimenea con humo -->
+  <rect x="720" y="345" width="18" height="45" fill="#3c4744"/>
+  <path d="M729 340 Q 710 300 735 270 Q 715 240 740 210" stroke="#cdd6d0" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- antena y periscopio improvisados -->
+  <line x1="600" y1="330" x2="600" y2="255" stroke="#5c6f6b" stroke-width="3"/>
+  <line x1="575" y1="270" x2="625" y2="255" stroke="#5c6f6b" stroke-width="2"/>
+  <line x1="575" y1="290" x2="625" y2="278" stroke="#5c6f6b" stroke-width="2"/>
+  <circle cx="600" cy="252" r="4" fill="#8fe36b"/>
+  <rect x="740" y="300" width="10" height="45" fill="#5c6f6b" transform="rotate(18 745 322)"/>
+  <circle cx="748" cy="298" r="9" fill="none" stroke="#5c6f6b" stroke-width="3"/>
+
+  <!-- plataforma / cabina principal -->
+  <rect x="560" y="412" width="220" height="148" fill="#5a4025" stroke="#2a1c12" stroke-width="3"/>
+  <g stroke="#2a1c12" stroke-width="2" opacity="0.45">
+    <line x1="560" y1="437" x2="780" y2="437"/>
+    <line x1="560" y1="464" x2="780" y2="464"/>
+    <line x1="560" y1="491" x2="780" y2="491"/>
+    <line x1="560" y1="518" x2="780" y2="518"/>
+    <line x1="560" y1="545" x2="780" y2="545"/>
+  </g>
+
+  <!-- puerta tipo escotilla -->
+  <circle cx="592" cy="510" r="26" fill="#2a1c12" stroke="#171008" stroke-width="4"/>
+  <circle cx="592" cy="510" r="18" fill="#1c130a"/>
+  <circle cx="605" cy="510" r="3" fill="#8fe36b"/>
+
+  <!-- ventanas iluminadas -->
+  <rect x="650" y="446" width="58" height="58" fill="#2a1c12"/>
+  <rect x="656" y="452" width="46" height="46" fill="#f2d675" opacity="0.92"/>
+  <line x1="679" y1="452" x2="679" y2="498" stroke="#2a1c12" stroke-width="3"/>
+  <line x1="656" y1="475" x2="702" y2="475" stroke="#2a1c12" stroke-width="3"/>
+  <circle cx="679" cy="475" r="34" fill="url(#lanternGlow)"/>
+
+  <rect x="722" y="452" width="34" height="34" fill="#2a1c12"/>
+  <rect x="727" y="457" width="24" height="24" fill="#f2d675" opacity="0.85"/>
+
+  <!-- luces de feria a lo largo de la plataforma -->
+  <path d="M562 415 Q 670 440 778 415" stroke="#4a3524" stroke-width="2" fill="none" opacity="0.7"/>
+  <g fill="#f2d675">
+    <circle cx="590" cy="424" r="3"/><circle cx="630" cy="431" r="3"/>
+    <circle cx="670" cy="434" r="3"/><circle cx="710" cy="431" r="3"/>
+    <circle cx="750" cy="424" r="3"/>
+  </g>
+
+  <!-- banderin KND en asta -->
+  <line x1="670" y1="338" x2="670" y2="285" stroke="#2a1c12" stroke-width="4"/>
+  <path d="M670 285 L 725 300 Q 705 310 725 322 L 670 337 Z" fill="#8fe36b"/>
+  <text x="678" y="308" font-family="'Courier New', monospace" font-size="13" fill="#0e2517" font-weight="bold">KND</text>
+
+  <!-- letrero de madera clavado -->
+  <g transform="rotate(-4 640 590)">
+    <rect x="590" y="578" width="100" height="26" fill="#4a3524" stroke="#241809" stroke-width="2"/>
+    <text x="640" y="596" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#e8e0c8" letter-spacing="1">CUARTEL</text>
+  </g>
+
+  <!-- plataforma inferior / mirador con poste y polea -->
+  <rect x="510" y="562" width="310" height="24" fill="#4a3524" stroke="#2a1c12" stroke-width="3"/>
+  <g stroke="#2a1c12" stroke-width="6">
+    <line x1="522" y1="562" x2="522" y2="440"/>
+    <line x1="586" y1="562" x2="586" y2="412"/>
+    <line x1="754" y1="562" x2="754" y2="412"/>
+    <line x1="812" y1="562" x2="812" y2="440"/>
+  </g>
+  <!-- polea con canasta -->
+  <line x1="812" y1="440" x2="850" y2="410" stroke="#4a3524" stroke-width="6"/>
+  <circle cx="850" cy="405" r="10" fill="none" stroke="#5c6f6b" stroke-width="3"/>
+  <line x1="850" y1="415" x2="850" y2="520" stroke="#8a7852" stroke-width="2"/>
+  <path d="M834 520 h32 l-6 26 h-20 Z" fill="#5a4025" stroke="#241809" stroke-width="2"/>
+
+  <!-- pasarela de tablones al mirador secundario -->
+  <g stroke="#8a7852" stroke-width="3">
+    <line x1="820" y1="574" x2="960" y2="590"/>
+    <line x1="820" y1="586" x2="960" y2="602"/>
+  </g>
+  <g stroke="#5c4a30" stroke-width="4">
+    <line x1="826" y1="572" x2="826" y2="588"/>
+    <line x1="860" y1="576" x2="860" y2="592"/>
+    <line x1="895" y1="580" x2="895" y2="596"/>
+    <line x1="930" y1="584" x2="930" y2="600"/>
+  </g>
+
+  <!-- mirador secundario / nido de cuervo -->
+  <line x1="960" y1="596" x2="960" y2="700" stroke="#3a2a1a" stroke-width="10"/>
+  <rect x="920" y="580" width="80" height="18" fill="#4a3524" stroke="#241809" stroke-width="2"/>
+  <path d="M925 580 L 960 545 L 995 580 Z" fill="none" stroke="#5c4a30" stroke-width="3"/>
+
+  <!-- escalera de cuerda -->
+  <g stroke="#8a7852" stroke-width="4" stroke-linecap="round">
+    <line x1="640" y1="586" x2="608" y2="825"/>
+    <line x1="682" y1="586" x2="694" y2="825"/>
+    <line x1="614" y1="645" x2="686" y2="645"/>
+    <line x1="612" y1="705" x2="689" y2="705"/>
+    <line x1="610" y1="765" x2="692" y2="765"/>
+  </g>
+
+  <!-- escalera de tablones clavados en el tronco -->
+  <g stroke="#4a3524" stroke-width="7" stroke-linecap="round">
+    <line x1="720" y1="600" x2="740" y2="600"/>
+    <line x1="716" y1="650" x2="744" y2="650"/>
+    <line x1="712" y1="700" x2="748" y2="700"/>
+    <line x1="708" y1="750" x2="752" y2="750"/>
+    <line x1="704" y1="800" x2="756" y2="800"/>
+  </g>
+
+  <!-- base: fogata, barriles y cajas -->
+  <ellipse cx="420" cy="836" rx="70" ry="18" fill="url(#fireGlow)"/>
+  <g fill="#241809">
+    <path d="M405 838 l8 -26 l8 26 Z"/>
+    <path d="M418 840 l7 -32 l7 32 Z"/>
+    <path d="M431 838 l6 -22 l6 22 Z"/>
+  </g>
+  <path d="M415 812 Q 408 790 420 770 Q 412 752 426 735" stroke="#f2a23a" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+
+  <g>
+    <rect x="900" y="790" width="46" height="60" rx="4" fill="#4a3a28" stroke="#241809" stroke-width="2"/>
+    <ellipse cx="923" cy="790" rx="23" ry="7" fill="#5a4a34" stroke="#241809" stroke-width="2"/>
+    <line x1="900" y1="810" x2="946" y2="810" stroke="#241809" stroke-width="2"/>
+    <line x1="900" y1="830" x2="946" y2="830" stroke="#241809" stroke-width="2"/>
+  </g>
+  <g>
+    <rect x="960" y="800" width="42" height="42" fill="#4a3524" stroke="#241809" stroke-width="2"/>
+    <line x1="960" y1="821" x2="1002" y2="821" stroke="#241809" stroke-width="2"/>
+    <line x1="981" y1="800" x2="981" y2="842" stroke="#241809" stroke-width="2"/>
+    <rect x="995" y="782" width="34" height="34" fill="#4a3524" stroke="#241809" stroke-width="2" transform="rotate(-6 1012 799)"/>
+  </g>
+
+  <!-- neblina del suelo -->
+  <path d="M0 850 Q 300 830 600 850 T 1400 850 V900 H0 Z" fill="#0a1c14" opacity="0.5"/>
+
+  <!-- suelo -->
+  <rect x="0" y="836" width="1400" height="64" fill="#04100a"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky-pista-de-hielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2a3a"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky-pista-de-hielo)"/>
+  <polyline points="0,420 90,340 180,400 260,300 340,380 420,260 520,370 620,300 700,400 800,340 800,500 0,500"
+    fill="#8fd6f2" opacity="0.18"/>
+  <circle cx="700" cy="90" r="46" fill="#8fd6f2" opacity="0.3"/>
+  <rect x="40" y="46" width="160" height="4" fill="#8fd6f2"/>
+  <text x="40" y="96" font-family="'Courier New', monospace" font-size="40" letter-spacing="3" fill="#8fd6f2">PISTA DE HIELO</text>
+  <text x="40" y="124" font-family="'Courier New', monospace" font-size="13" letter-spacing="2" fill="#d9e8d3" opacity="0.65">PORTADA PLACEHOLDER -- REEMPLAZAR</text>
+</svg>
